@@ -25,15 +25,15 @@ public class SynchronizedExample1 {
     }
 
     public static void main(String[] args) {
-        SynchronizedExample1 synchronizedExample1 = new SynchronizedExample1();
-        SynchronizedExample1 synchronizedExample11 = new SynchronizedExample1();
+        SynchronizedExample1 example1= new SynchronizedExample1();
+        SynchronizedExample1 example2 = new SynchronizedExample1();
         ExecutorService executorService = Executors.newCachedThreadPool();
         executorService.execute(() -> {
-            synchronizedExample1.test1();
+            example1.test1();
         });
 
         executorService.execute(() -> {
-            synchronizedExample11.test2();
+            example2.test2();
         });
     }
 }

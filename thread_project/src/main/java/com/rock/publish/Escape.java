@@ -12,6 +12,7 @@ public class Escape {
     }
 
     private class InnerClass {
+        //在Escape没有初始化完成之前引用了
         public InnerClass() {
             log.info("{}", Escape.this.thisCanBeEscape);
         }

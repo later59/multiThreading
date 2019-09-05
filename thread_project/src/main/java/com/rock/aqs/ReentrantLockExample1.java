@@ -16,7 +16,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Time:14:59
  */
 @Slf4j
-public class ReentrantLockExzmple1 {
+public class ReentrantLockExample1 {
 
     // 请求总数
     public static int clientTotal = 5000;

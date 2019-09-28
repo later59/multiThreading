@@ -22,6 +22,7 @@ public class FutureTaskExample2 {
                 return "完成";
             }
         });
+        Executors.newSingleThreadExecutor();
         new Thread(futureTask).start();
         String futureResult = futureTask.get();
         log.info("main方法中执行代码");
